@@ -1,0 +1,20 @@
+{
+  "name": "db-server",
+  "description": "DB Server Role",
+  "json_class": "Chef::Role",
+  "chef_type": "role",
+  "default_attributes": {
+
+  },
+  "override_attributes": {
+
+  },
+  "run_list": [
+    "recipe[bootstrap_a_node::default]",
+    "recipe[chef-client::default]",
+    "recipe[postgresql_setup::default]"
+  ],
+  "env_run_lists": {
+
+  }
+}

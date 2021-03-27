@@ -1,0 +1,20 @@
+{
+  "name": "web-server",
+  "description": "Web Server Role",
+  "json_class": "Chef::Role",
+  "chef_type": "role",
+  "default_attributes": {
+
+  },
+  "override_attributes": {
+
+  },
+  "run_list": [
+    "recipe[bootstrap_a_node::default]",
+    "recipe[chef-client::default]",
+    "recipe[nginx_setup::default]"
+  ],
+  "env_run_lists": {
+
+  }
+}
